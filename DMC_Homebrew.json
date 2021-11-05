@@ -1,0 +1,114 @@
+{
+	"siteVersion": "1.141.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "DMCHomebrew",
+				"abbreviation": "DMC",
+				"full": "DMC Homebrew",
+				"url": "",
+				"authors": [
+					"Davran"
+				],
+				"convertedBy": [
+					"Davran"
+				]
+			}
+		],
+		"dateAdded": 1636074347,
+		"dateLastModified": 1636074347
+	},
+	"monster": [
+		{
+			"name": "Silver Serpent",
+			"source": "DMCHomebrew",
+			"size": "H",
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d12 + 16",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 114,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The silver serpent can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+					]
+				},
+				{
+					"name": "Refracting Pupils",
+					"entries": [
+						"The Silver Serpent's vision cannot be obscured by any form of water, including rain, steam, or fog."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage, plus 3 ({@damage 1d6}) cold damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target is  {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained}, and the snake can't constrict another target."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"mountain",
+				"underdark"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
